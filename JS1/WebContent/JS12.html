@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Functions Scope vs Global Scope</title>
+<script type="text/javascript">
+	/* 
+	 if(true)
+	 {
+	 var x = 5;
+	 }
+	 alert(x);
+	 */
+	/* 
+
+	 myscope = "MYSCOPE Global";
+	 (function() {
+	 if (true) {
+	 var myscope = "inside the if statement in function";
+	 }
+
+	 alert("Inside the function Scope is:" + myscope);
+	 })();
+	
+	 //	alert("outside the function Scope is:" + myscope);
+
+	 */
+
+	myscope = "MYSCOPE Global";
+	alert('window.property: ' + window.myscope);
+	
+</script>
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>

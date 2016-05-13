@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>6 Conditional Logic in JS</title>
+
+<script type="text/javascript">
+/* 	var username = "rimmer";
+
+	switch (username) {
+
+	case "listener":
+		document.write("Lister works here");
+		break;
+
+	case "rimmer":
+		document.write("rimmer works here");
+		break;
+
+	default:
+		document.write("defult works here");
+		break;
+
+	} */
+	
+	
+	var rightNowTime= new Date();
+	
+	var currentHOUR = rightNowTime.getHours();
+	
+	switch(true){
+	case (currentHOUR >8 && currentHOUR <12):
+		document.write(currentHOUR);
+		document.write("Good Morning");
+break;
+	case (currentHOUR ===12):
+		document.write(currentHOUR);
+		document.write("Time to lunch");
+	break;
+	case (currentHOUR >12 && currentHOUR <18):
+		document.write(currentHOUR);
+		document.write("Good Afternoon");
+	break;
+	default:
+		document.write(currentHOUR);
+	
+		document.write("\rDifferent Case ");
+	break;
+	}
+	
+</script>
+
+</head>
+<body>
+	<h1>8 switch case Conditional Logic in JS</h1>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>JS Functions</title>
+
+<script type="text/javascript">
+
+/* function myNewFunction(){
+	
+	alert("Function!");
+} 
+ */
+
+/*  function myNewFunction(myvalue){
+		
+		alert("Function!"+myvalue);
+	} 
+
+ myNewFunction("Partner");
+ */
+ /* 
+ function add(first, second) {
+	return first+second;
+}
+ 
+ var myresult =add(2, 5);
+ alert(myresult);
+ 
+ */
+ 
+ /* 
+ function add() {
+	var tempvalue = 0;
+	
+	for (i = 0; i < arguments.length; i++) 
+	{
+		tempvalue+=arguments[i];
+	}
+	return tempvalue;
+	
+}
+ 
+ var showValue = add(1,2,3,4,5);
+ alert("value"+showValue);
+ */ 
+ /* 
+ 
+  var addMe = function() {
+	
+	 return arguments[0]+arguments[1];
+}
+ 
+ var myresult = addMe(1,2);
+ alert(myresult);
+ */
+ 
+/*  var myresult = (function() {
+	return arguments[0]+arguments[1];
+})(1,2);
+ 
+ alert(myresult);
+ */ 
+ 
+ 
+alert((function() {
+	return arguments[0]+arguments[1];
+	})(1,3));
+	 
+ </script>
+</head>
+<body>
+
+<input type="button" value="clickMe" onclick="myNewFunction()">
+<h1>JS Functions</h1>
+</body>
+</html>
